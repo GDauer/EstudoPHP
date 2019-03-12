@@ -1,0 +1,12 @@
+create schema usuario;
+
+use usuario;
+
+create table Estudandophp
+(
+	nome varchar(255) not null,
+	email varchar(255) not null,
+	
+);
+
+
