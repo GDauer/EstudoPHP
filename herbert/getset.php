@@ -1,0 +1,1 @@
+/srv/http/seudominio1.com/html/getset.php
