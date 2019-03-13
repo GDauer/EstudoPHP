@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^5.1.3"
+    },
+
+    "scripts": {
+        "ntest": "vendor/bin/phpunit test/ --bootstrap soma.php  --testdox"
+    }
+
+}
