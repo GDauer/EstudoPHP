@@ -13,8 +13,7 @@ try {
     echo $n1 =3;
          $n2 =2;
          $s = $n1 + $n2;
-        echo "<br> A soma entre $n1 e $n2 e igual a $s";
-
+        
 }catch(Exception $e){
     echo "erro";
 
