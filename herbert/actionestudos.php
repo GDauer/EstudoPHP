@@ -14,7 +14,7 @@ try {
     $n2 =2;
     $s = $n1 + $n2;
     $m = $s /2;
-    $num =50;
+    $num =0;
 
     echo "<br> O resultado de $n1 + $n2 e igual a $s </br>";
     echo "<br>o Resultado de $n1 + $n2 é igual a : </br>". ($n1 + $n2);
@@ -45,14 +45,18 @@ try {
 
     else
         {
-            echo "<br> Valor incorreto";
+            echo "<br> Valor incorreto</br>";
         }
 
-    while ($num <=100) {
+    do {
         $num = $num +1;
         echo $num . "\n";
-
     }
+
+    while ($num <=10) ;
+
+
+
 
 
 
