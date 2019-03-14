@@ -4,7 +4,8 @@
     },
 
     "scripts": {
-        "ntest": "vendor/bin/phpunit test/ --bootstrap soma.php  --testdox"
+        "ntest": "vendor/bin/phpunit test/ --bootstrap index.php  --testdox",
+        "test": "vendor/bin/phpunit test/ --bootstrap index.php"
     }
 
 }
