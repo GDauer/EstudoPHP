@@ -12,7 +12,7 @@ class produtoTest extends categoriaTest
     private $prodNome, $preco, $quant, $desc;
     protected $CatNome, $sku;
 
-    public function __construct($CatNome, $prodNome, $desc, $quant, $preco)
+    public function __construct($CatNome='', $prodNome='', $desc='', $quant=0, $preco=0.0)
     {
         parent::__construct($CatNome);
         $this->prodNome  = $prodNome;
@@ -70,7 +70,7 @@ class produtoTest extends categoriaTest
     /**
      * @param mixed $sku
      */
-    public function testsetSku($sku)
+    public function testsetSku($sku='')
     {
         $this->sku = $sku;
     }
@@ -83,7 +83,7 @@ class produtoTest extends categoriaTest
     /**
      * @param mixed $desc
      */
-    public function testsetDesc($desc)
+    public function testsetDesc($desc='')
     {
         $this->desc = $desc;
     }
@@ -91,17 +91,17 @@ class produtoTest extends categoriaTest
     /**
      * @param mixed $quant
      */
-    public function testsetQuant($quant)
+    public function testsetQuant($quant=0)
     {
         $this->quant = $quant;
     }
 
-    public function testsetPreco($preco)
+    public function testsetPreco($preco=0.0)
     {
         $this->preco = $preco;
     }
 
-    public function testsetProdNome($prodNome)
+    public function testsetProdNome($prodNome='')
     {
         $this->prodNome = $prodNome;
     }
