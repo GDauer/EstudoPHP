@@ -1,0 +1,6 @@
+Controller:
+   Middleman between Model and View;
+   Receives input from view, url;
+   Process request (GET, POST, PUT, DELETE);
+   Gets data from model;
+   Passes data to the view;

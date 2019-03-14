@@ -1,0 +1,6 @@
+View:
+   What the end user sees (UI);
+   Usually consist of html/css;
+   Communicates with the controller;
+   Can be passed dynamic values from the controller;
+   Template Engines;

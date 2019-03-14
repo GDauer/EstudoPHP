@@ -1,0 +1,4 @@
+Data related to logic:
+   Interaction with database (CRUD);
+   Communication with Controller;
+   Can sometimes update the view;
