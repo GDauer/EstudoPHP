@@ -29,7 +29,10 @@ class acessabdTest extends TestCase
         {
             die("Connection has failed :( <br />" . mysqli_connect_error());
         }
-
+        else
+        {
+            return $link;
+        }
     }
 }
 

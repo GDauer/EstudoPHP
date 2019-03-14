@@ -9,16 +9,25 @@
 
 class produtoTest extends categoriaTest
 {
-    private $prodNome, $preco, $quant, $desc;
+    private $prodNome, $preco, $quant, $desc, $id;
     protected $CatNome, $sku;
 
-    public function __construct($CatNome='', $prodNome='', $desc='', $quant=0, $preco=0.0)
+    public function __construct($CatNome='', $prodNome='', $desc='', $quant=0, $preco=0.0, $id=0)
     {
         parent::__construct($CatNome);
         $this->prodNome  = $prodNome;
         $this->quant     = $quant;
         $this->desc      = $desc;
         $this->preco     = $preco;
+        $this->id        = $id;
+    }
+
+    /**
+     * @return int
+     */
+    public function testgetId()
+    {
+        return $this->id;
     }
 
     /**
@@ -42,7 +51,7 @@ class produtoTest extends categoriaTest
      */
     public function testgetProdNome()
     {
-        return$this->prodNome;
+        return $this->prodNome;
     }
 
     /**
@@ -69,6 +78,10 @@ class produtoTest extends categoriaTest
         return $this->preco;
     }
 
+    public function testsetId($id=0)
+    {
+        $this->id = $id;
+    }
 
     /**
      * @param mixed $sku
