@@ -48,6 +48,17 @@ try {
             echo "<br> Valor incorreto";
         }
 
+    while ($num <=100) {
+        $num = $num +1;
+        echo $num . "\n";
+
+    }
+
+
+
+
+
+
 }catch(Exception $e){
     echo "erro";
 }
