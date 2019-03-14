@@ -35,33 +35,9 @@ class crudProdTest extends acessabdTest
 
     public function testselectProd()
     {
-        $count = array();
-        $temp = array();
-        $prod = array();
-        $select = 'Produto';
-        $stmt = null;
-
-        $stmt = mysqli_stmt_prepare($stmt, "SELECT COUNT(*) FROM Webjump.Produto;");
-        mysqli_stmt_execute($stmt);
-
-        $count = mysqli_stmt_get_result($stmt);
-        $count = mysqli_fetch_array($count, MYSQLI_ASSOC);
-
-        $chave = $count['COUNT(*)'];
-
-        for($i=0; $i <= $chave; $i++)
-        {
-            $stmt = mysqli_prepare($this->testConnect(), "SELECT * FROM ? WHERE prod_id = ?");
-            mysqli_stmt_bind_param($stmt, "si", $select, $i);
-            mysqli_stmt_execute($stmt);
-
-            $temp = mysqli_stmt_get_result($stmt);
-            $temp = mysqli_fetch_array($temp, MYSQLI_ASSOC);
-            $prod[$i] = $temp;
-        }
-        mysqli_stmt_close($stmt);
-        mysqli_close($this->testConnect());
+      // a ser implementado;
     }
+
 
     public function testupdateProd()
     {
