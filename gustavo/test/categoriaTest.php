@@ -12,7 +12,7 @@ class categoriaTest extends TestCase
     private $id;
     protected $CatNome, $sku;
 
-    public function __construct($id, $CatNome, $sku)
+    public function __construct($id=0, $CatNome='', $sku='')
     {
         $this->id = $id;
         $this->CatNome = $CatNome;
@@ -22,7 +22,7 @@ class categoriaTest extends TestCase
     /**
      * @return mixed
      */
-    public function getId()
+    public function testgetId()
     {
         return $this->id;
     }
@@ -30,7 +30,7 @@ class categoriaTest extends TestCase
     /**
      * @return mixed
      */
-    public function getCatNome()
+    public function testgetCatNome()
     {
         return $this->CatNome;
     }
@@ -38,7 +38,7 @@ class categoriaTest extends TestCase
     /**
      * @return mixed
      */
-    public function getSku()
+    public function testgetSku()
     {
         return $this->sku;
     }
@@ -46,7 +46,7 @@ class categoriaTest extends TestCase
     /**
      * @param mixed $CatNome
      */
-    public function setCatNome($CatNome)
+    public function testsetCatNome($CatNome='')
     {
         $this->CatNome = $CatNome;
     }
@@ -54,9 +54,9 @@ class categoriaTest extends TestCase
     /**
      * @param mixed $sku
      */
-    public function setSku($sku)
+    public function testsetSku($sku='')
     {
         $this->sku = $sku;
     }
-
+    
 }
