@@ -14,9 +14,9 @@ class categoriaTest extends TestCase
 
     public function __construct($id=0, $CatNome='', $sku='')
     {
-        $this->id = $id;
-        $this->CatNome = $CatNome;
-        $this->sku = $sku;
+        $this->id       = $id;
+        $this->CatNome  = $CatNome;
+        $this->sku      = $sku;
     }
 
     /**
@@ -58,5 +58,5 @@ class categoriaTest extends TestCase
     {
         $this->sku = $sku;
     }
-    
+
 }
