@@ -57,11 +57,6 @@ try {
 
 
 
-
-
-
-
-
 }catch(Exception $e){
     echo "erro";
 }
