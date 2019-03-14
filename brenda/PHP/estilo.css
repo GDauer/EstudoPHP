@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: serif;
+    background: #585858;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+#barradenavegacao {
+    background: #fff;
+    border-bottom: 1px solid #585858;
+    height: 45px;
+}
+
+#areabarra {
+    width: 720px;
+    margin: 0 auto;
+}
+
+#area-conteudo {
+    width: 720px;
+    margin: 10px auto 10px auto;
+}
+
+#postagem {
+    background: #fff;
+    padding: 10px;
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    float: right;
+    padding: 10px;
+}
+
+#area-cadastro {
+    width: 720px;
+    margin: 10px auto 10px auto;
+}
+
+a:link {
+    color: #838383;
+}
+
+a:visited {
+    color: #838383;
+}
+
+a:hover {
+    color: black;
+    background: #fff;
+}
+
+a:active {
+    color: #838383;
+}
+
+___________________________________________________________________________________________________________ .cinza {
+    color: #6E6E6E;
+}
+
+.postadopor {
+    font-size: 14px;
+    border-bottom: 1px solid #BDBDBD;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.imgpostagem {
+    float: left;
+    margin: 0 5px 0 5px;
+    width: 300px;
+}
+
+.postado {
+    border-left: 5px solid #585858;
+    display: block;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.cortitulo {
+    color: #585858;
+}
