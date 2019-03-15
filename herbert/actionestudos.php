@@ -73,8 +73,26 @@ try {
             echo "o valor é igual a 2";
             break;
         default:
-            echo "Estrutura default executada";
+            echo "Estrutura default executada<br>";
     }
+
+
+    // Constantes
+
+    define ("TESTE",10);
+    echo TESTE . "<br>"  ;
+
+    for ($x =0; $x<5 ; $x ++)
+        define("CONSTANTES" . $x , $x);
+
+    echo CONSATENTE0 . "<br>";
+    echo CONSATENTE4 . "<br>";
+
+
+
+
+
+
 
 }catch(Exception $e){
     echo "erro";
