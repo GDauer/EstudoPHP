@@ -7,8 +7,14 @@
  */
 
 class crudProdTest extends acessabdTest
-
 {
+private $select;
+
+    public function __construct($select = array())
+    {
+        $this->select = $select;
+    }
+
     public function testinsertProd()
     {
         //include_once produtoTest.php;
@@ -35,8 +41,22 @@ class crudProdTest extends acessabdTest
 
     public function testselectProd()
     {
-      // a ser implementado;
+        $count = function() {
+
+            $result = mysqli_query($this->testConnect(), "SELECT COUNT(*) FROM Produto");
+            $result = $result->fetch_row();
+            $result = $result[0];
+
+            return $result;
+        };
+        for($i=0; $i <= $count(); $i++) {
+            $result = mysqli_query($this->testConnect(), "SELECT * FROM Produto WHERE prod_id =". $i);
+            $result = $result->fetch_row();
+            $this->select[$i] = $result;
+        }
+        return $this->select;
     }
+
 
 
     public function testupdateProd()
