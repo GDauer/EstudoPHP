@@ -10,13 +10,14 @@ use PHPUnit\Framework\TestCase;
 class categoriaTest extends TestCase
 {
     private $id;
-    protected $CatNome, $sku;
+    protected $CatNome, $sku, $indice;
 
     public function __construct($id=0, $CatNome='', $sku='')
     {
         $this->id       = $id;
         $this->CatNome  = $CatNome;
         $this->sku      = $sku;
+        $this->indice   = $indice;
     }
 
     /**
@@ -35,6 +36,13 @@ class categoriaTest extends TestCase
     public function testgetCatNome()
     {
         if(isset($_POST['catNome'])) {
+            return $this->CatNome = htmlspecialchars($_POST['catNome']);
+        }
+    }
+
+    public function testgetCatIndice()
+    {
+        if(isset($_POST['catIndice'])) {
             return $this->CatNome = htmlspecialchars($_POST['catNome']);
         }
     }
