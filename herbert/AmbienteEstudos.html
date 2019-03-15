@@ -2,7 +2,14 @@
 <html lang ="pr-br">
 <head>
     <meta charset="UTF-8">
+    <style>
+        body {
 
+            background-color: #c4e3f3;
+        }
+
+
+    </style>
     <title>Ambiente para Estudo PHP -excript</title>
 </head>
 <body>
@@ -13,6 +20,33 @@
     <H4>IDADE:</H4><input type="text"  name ="idade"/>
     <input type ="submit"/>
 </form>
+
+<form method ="POST" action="actionestudos.php" >
+    <select type ="text" name ="cbxMES">
+        =
+        <option value ="1">Janeiro</option>
+        <option value ="2">Fevereiro</option>
+        <option value ="3">Março</option>
+        <option value ="4">Abril</option>
+        <option value ="5">Maio</option>
+        <option value ="6">Junho</option>
+        <option value ="7">Julho</option>
+        <option value ="8">Agosto</option>
+        <option value ="9">Setembro</option>
+        <option value ="10">Outubro</option>
+        <option value ="11">Novembro</option>
+        <option value ="12">Dezembro</option>
+    </select>
+    <input type ="submit"/>
+</form>
+
+<form method ="POST" action="actionestudos.php">
+    <h4>DIGITE A QUANTIDADE DE SEUS DEPEDENTES. EM SEGUIDA PREENCHA O FORMULÁRIO</h4>
+    <input type="text" name="dependentes">
+    <input type ="submit">
+
+</form>
+
 
 </body>
 
