@@ -24,7 +24,9 @@ class categoriaTest extends TestCase
      */
     public function testgetId()
     {
-        return $this->id;
+        if(isset($_POST['catId'])) {
+            return $this->id = htmlspecialchars($_POST['catId']);
+        }
     }
 
     /**
@@ -32,31 +34,16 @@ class categoriaTest extends TestCase
      */
     public function testgetCatNome()
     {
-        return $this->CatNome;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function testgetSku()
-    {
-        return $this->sku;
-    }
-
-    /**
-     * @param mixed $CatNome
-     */
-    public function testsetCatNome($CatNome='')
-    {
-        $this->CatNome = $CatNome;
+        if(isset($_POST['catNome'])) {
+            return $this->CatNome = htmlspecialchars($_POST['catNome']);
+        }
     }
 
     /**
      * @param mixed $sku
      */
-    public function testsetSku($sku='')
+    public function testsetSku($sku)
     {
         $this->sku = $sku;
     }
-
 }
