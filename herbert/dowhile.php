@@ -9,13 +9,6 @@
 
 <body>
 
-<form method ="post">
-    <h4>Digite a quantidade de seus Dependentes. Em seguida preencha o formulário</h4>
-    <input type=""text name="dependentes">
-    <input type ="submit">
-
-</form>
-
 
 <?php
 
@@ -49,9 +42,6 @@ if(isset($_POST['dependentes'])) {
 
 
 }
-
-
-
 
 
 

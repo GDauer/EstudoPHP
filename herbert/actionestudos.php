@@ -2,6 +2,10 @@
 include_once "getset.php";
 include_once "Conexaobd.php";
 include_once  "ifelse.php";
+include_once  "dowhile.php";
+include_once  "switch.php";
+
+
 $get = new estudos ($name,$email,$idade);
 
 try {
