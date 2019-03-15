@@ -47,25 +47,41 @@ try {
     {
         echo "<br> Valor incorreto</br>";
     }
-
+    //laço de repeticão
     do {
         $num = $num +1;
         echo $num . "<br>";
     } while ($num <=10);
 
 
-
+    //instrunção continue
     for ($i=0; $i<100 ; $i++){
-        if($i % 2 ==0){
-            echo $i ;
+        if($i % 2 ==1){
+            continue;
         }
+            echo $i . "<br>";
     }
 
+    //Estrutura de seleção múltipla switch
 
+    switch ($num) {
+
+        case 1:
+            echo "<br>o valor é igual a 1</br>";
+            break;
+        case 2:
+            echo "o valor é igual a 2";
+            break;
+        default:
+            echo "Estrutura default executada";
+    }
 
 }catch(Exception $e){
     echo "erro";
 }
+
+
+
 
 ?>
 
