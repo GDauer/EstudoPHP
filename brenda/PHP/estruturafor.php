@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title> TEST </title>
     <meta charset="utf-8" />
@@ -7,11 +8,10 @@
 
 <body>
     <?php
-       $valor= $_GET ["v"];
-       echo "Escolheu valor $valor";
-        
-        
-     
+    for ($c = 1; $c <= 10; $c++) {
+        echo "$c";
+    }
     ?>
 </body>
+
 </html> 

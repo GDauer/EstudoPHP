@@ -29,7 +29,7 @@ try {
     var_dump(10 == 10) ;
 
     echo "<br>Indentico</br>";
-     var_dump(10===10);;
+    var_dump(10===10);;
     var_dump(10 === "10");
     var_dump(10 !==10);
 
@@ -44,22 +44,63 @@ try {
     }
 
     else
-        {
-            echo "<br> Valor incorreto</br>";
-        }
-
+    {
+        echo "<br> Valor incorreto</br>";
+    }
+    //laço de repeticão
     do {
         $num = $num +1;
-        echo $num . "\n";
+        echo $num . "<br>";
+    } while ($num <=10);
+
+
+    //instrunção continue
+    for ($i=0; $i<100 ; $i++){
+        if($i % 2 ==1){
+            continue;
+        }
+            echo $i . "<br>";
     }
 
-    while ($num <=10) ;
+    //Estrutura de seleção múltipla switch
 
+    switch ($num) {
+
+        case 1:
+            echo "<br>o valor é igual a 1</br>";
+            break;
+        case 2:
+            echo "o valor é igual a 2";
+            break;
+        default:
+            echo "Estrutura default executada<br>";
+    }
+
+
+    // Constantes
+
+    define ("TESTE",10);
+    echo TESTE . "<br>"  ;
+
+    for ($x =0; $x<5 ; $x ++)
+        define("CONSTANTES" . $x , $x);
+
+    echo CONSATENTE0 . "<br>";
+    echo CONSATENTE4 . "<br>";
+
+    // Variavel VAriavel
+
+    $varvar = "teste";
+    $$varvar = 10;
+    echo $varvar ." " . $$varvar;
 
 
 }catch(Exception $e){
     echo "erro";
 }
+
+
+
 
 ?>
 
