@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2db03331-f73e-4672-aea6-e6ea3d535d77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/produtoTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/produtoTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/produtoTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="113" column="32" lean-forward="true" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+            <state relative-caret-position="561">
+              <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -279,7 +280,7 @@
       <workItem from="1552496101603" duration="4346000" />
       <workItem from="1552567253534" duration="19429000" />
       <workItem from="1552652922250" duration="14292000" />
-      <workItem from="1552670311271" duration="2768000" />
+      <workItem from="1552670311271" duration="3389000" />
     </task>
     <servers />
   </component>
@@ -316,7 +317,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41830000" />
+    <option name="totallyTimeSpent" value="42451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1414" y="-11" width="1873" height="1092" extended-state="6" />
@@ -450,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/produtoTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="113" column="32" lean-forward="true" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+        <state relative-caret-position="561">
+          <caret line="106" column="7" lean-forward="true" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
         </state>
       </provider>
     </entry>

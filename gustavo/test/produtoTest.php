@@ -108,10 +108,11 @@ class produtoTest extends categoriaTest
     public function testgetPreco()
     {
         if(isset($_POST['preco'])) {
-            str_ireplace(",", ".", $_POST['preco']);
+            $test = str_ireplace(",", ".", $_POST['preco']);
+            $test = (double) $test;
 
-            if(is_double($_POST['preco']) == true && $_POST['preco'] != null && $_POST['preco'] > 0.0) {
-                return $this->preco = $_POST['preco'];
+            if(is_double($test) == true && $test != null && $test > 0.0) {
+                return $this->preco = $test;
             } else {
                 echo "<script language='javascript' type='text/javascript'>alert('ERRO: O campo não pode ficar em branco e não serão aceitos produtos com valor <= 0!'); 
                 window.location.href='addProduct.html';</script>";
