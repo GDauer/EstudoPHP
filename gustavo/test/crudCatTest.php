@@ -20,7 +20,7 @@ class crudCatTest extends acessabdTest
         $cat = new categoriaTest();
 
         $stmt = mysqli_prepare($this->testConnect(), "INSERT INTO Categoria (nome, sku, cat_id) VALUES (?,?,?)");
-        mysqli_stmt_bind_param($stmt, 'sss', $cat->testgetCatNome(), $cat->testgetSku(), $cat->testgetId());
+        mysqli_stmt_bind_param($stmt, 'sss', $cat->testgetCatNome(), $cat->testsetSku(), $cat->testgetId());
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         mysqli_close($this->testConnect());

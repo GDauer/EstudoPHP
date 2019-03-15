@@ -12,7 +12,7 @@ class categoriaTest extends TestCase
     private $id;
     protected $CatNome, $sku, $indice;
 
-    public function __construct($id=0, $CatNome='', $sku='')
+    public function __construct($id=0, $CatNome='', $sku='', $indice=0)
     {
         $this->id       = $id;
         $this->CatNome  = $CatNome;
@@ -40,18 +40,26 @@ class categoriaTest extends TestCase
         }
     }
 
-    public function testgetCatIndice()
+    /**
+     * @return mixed
+     */
+    public function testgetIndice()
     {
         if(isset($_POST['catIndice'])) {
-            return $this->CatNome = htmlspecialchars($_POST['catNome']);
+            return $this->indice = htmlspecialchars($_POST['catIndice']);
         }
     }
 
     /**
      * @param mixed $sku
      */
-    public function testsetSku($sku)
+    public function testsetSku($sku='')
     {
+        $prod = new produtoTest();
+
+        $sku = $prod->testgetSku();
         $this->sku = $sku;
     }
+
+
 }
