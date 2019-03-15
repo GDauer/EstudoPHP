@@ -88,10 +88,11 @@ try {
     echo CONSATENTE0 . "<br>";
     echo CONSATENTE4 . "<br>";
 
+    // Variavel VAriavel
 
-
-
-
+    $varvar = "teste";
+    $$varvar = 10;
+    echo $varvar ." " . $$varvar;
 
 
 }catch(Exception $e){
