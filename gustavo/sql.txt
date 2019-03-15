@@ -6,6 +6,8 @@ create table Categoria
 (
 	cat_id varchar(255) not null,
 	nome varchar(255) not null,
+	sku varchar(255) not null,
+	indice int,
 	constraint Categoria_pk
 		primary key (cat_id)
 );
