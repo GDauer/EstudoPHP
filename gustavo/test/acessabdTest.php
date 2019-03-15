@@ -24,15 +24,19 @@ class acessabdTest extends TestCase
 
     public function testConnect($host='localhost', $user='root', $password='root', $database='Webjump')
     {
+
         $link = mysqli_connect("$host", "$user", "$password", "$database");
+
         if(!$link)
         {
-            die("Connection has failed :( <br />" . mysqli_connect_error());
+            throw new Exception(mysqli_connect_error());
         }
-        else
-        {
+        try{
             return $link;
+        } catch (Exception $e) {
+            echo 'Caught exception:', $e->getMessage();
         }
+
     }
 }
 
