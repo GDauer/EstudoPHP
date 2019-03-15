@@ -29,7 +29,7 @@ try {
     var_dump(10 == 10) ;
 
     echo "<br>Indentico</br>";
-     var_dump(10===10);;
+    var_dump(10===10);;
     var_dump(10 === "10");
     var_dump(10 !==10);
 
@@ -44,16 +44,22 @@ try {
     }
 
     else
-        {
-            echo "<br> Valor incorreto</br>";
-        }
+    {
+        echo "<br> Valor incorreto</br>";
+    }
 
     do {
         $num = $num +1;
-        echo $num . "\n";
-    }
+        echo $num . "<br>";
+    } while ($num <=10);
 
-    while ($num <=10) ;
+
+
+    for ($i=0; $i<100 ; $i++){
+        if($i % 2 ==0){
+            echo $i ;
+        }
+    }
 
 
 
